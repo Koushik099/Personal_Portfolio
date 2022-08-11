@@ -6,3 +6,12 @@ let togglenavbar = () => {
 mobile_Nav.addEventListener("click", () => {
   togglenavbar();
 });
+
+// page reload
+(function () {
+  window.onpageshow = function (event) {
+    if (event.persisted) {
+      window.location.reload();
+    }
+  };
+})();
