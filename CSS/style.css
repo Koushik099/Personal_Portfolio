@@ -27,7 +27,7 @@ body {
 .img {
   display: flex;
 }
-.img h1 {
+.img a h1 {
   font-size: 26px;
   color: #ffc728;
   text-decoration: underline;
@@ -163,6 +163,7 @@ body {
 
   column-gap: 100px;
   padding: 50px 100px;
+  min-height: 0;
 }
 .heading-container .img img {
   width: 400px;
@@ -282,7 +283,7 @@ body {
   .header {
     padding: 0 20px;
   }
-  .img h1 {
+  .img a h1 {
     font-size: 20px;
   }
   .heading-container {
@@ -293,10 +294,10 @@ body {
     height: 240px;
   }
   .hero-text h1:nth-child(1) {
-    font-size: 20px;
+    font-size: 18px;
   }
   .hero-text h1:nth-child(2) {
-    font-size: 20px;
+    font-size: 23px;
   }
   .btn {
     padding: 7px 20px;
