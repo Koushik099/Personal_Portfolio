@@ -201,7 +201,7 @@ body {
   width: 43px;
   margin: 1px 0 1px 0;
 }
-.hero-logo a:nth-child(3) img {
+.hero-logo a:nth-child(1) img {
   filter: invert(100%);
 }
 .btn {

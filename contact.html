@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio || Contact</title>
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/contact.css" />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -26,6 +27,7 @@
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
+    <!-- Navbar 😎 -->
     <header class="header">
       <div class="img">
         <a href="#">
@@ -45,6 +47,57 @@
         <ion-icon class="mobile-nav-icon" name="close-outline"></ion-icon>
       </div>
     </header>
+
+    <!-- Hero-Section 😎😎 -->
+
+    <div class="main">
+      <div class="container">
+        <div class="left">
+          <!-- Address-section -->
+          <div class="details">
+            <h1>Name: <a href="/" class="name"> Koushik Saha </a></h1>
+            <h4>
+              Address:
+              <p>D-155, Noida, Sector-49, Uttar Pradesh, 201304</p>
+            </h4>
+
+            <h4>Contact: <a class="white">+91-8637538774</a></h4>
+            <h4>
+              GitHub:
+              <a href="https://github.com/KoushikwebDev"
+                >https://github.com/KoushikwebDev</a
+              >
+            </h4>
+            <h4>
+              Email:
+              <a href="mailto:koushikwebdevv@gmail.com" target="_blank"
+                >koushikwebdevv@gmail.com</a
+              >
+            </h4>
+          </div>
+        </div>
+        <div class="right">
+          <!-- Form-Section -->
+          <div class="formDetails">
+            <form
+              action="mailto:kou.saha.ami@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <label for="">Your Name :</label>
+              <input type="text" name="YourName " /> <br />
+              <label for="">Your Email :</label>
+              <input type="email" name="YourEmail " /> <br />
+              <label for="">Your Message :</label>
+              <textarea name="YourMessage " id="" cols="20" rows="7"></textarea>
+              <br />
+              <input type="submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
