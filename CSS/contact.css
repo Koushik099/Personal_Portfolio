@@ -66,12 +66,12 @@
 .formDetails input {
   padding: 5px 5px;
 }
-.formDetails input[type="submit"] {
+.formDetails .submitBtn {
   padding: 10px 0;
   font-size: 20px;
   background-color: #e03b8b;
 }
-.formDetails input[type="submit"]:hover {
+.formDetails .submitBtn:hover {
   font-weight: 600;
   cursor: pointer;
 }
