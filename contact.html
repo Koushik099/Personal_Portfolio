@@ -128,6 +128,8 @@
           alert("Please fill all input fields");
           return;
         }
+        submitBtn.innerText = "Submitting Your Message...";
+
         let userData = {
           name: userName.value,
           email: email.value,
@@ -149,12 +151,16 @@
             }
           );
           // console.log(res);
+          submitBtn.innerText = "Submit";
+
           email.value = "";
           userName.value = "";
           message.value = "";
           alert("Your Message Submitted Successfully");
         } catch (error) {
-          alert(error.message);
+          submitBtn.innerText = "Submit";
+
+          alert("Message not sent, Please try again");
           console.log(error.message);
         }
       };
