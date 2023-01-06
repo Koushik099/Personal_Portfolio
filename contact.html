@@ -124,7 +124,7 @@
       const submitUserData = async (e) => {
         e.preventDefault();
 
-        if (!(userName.value || email.value || message.value)) {
+        if (!(userName.value && email.value && message.value)) {
           alert("Please fill all input fields");
           return;
         }
