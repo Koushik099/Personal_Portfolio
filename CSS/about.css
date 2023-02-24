@@ -21,6 +21,15 @@
   font-weight: 700;
   opacity: 1;
 }
+.skill .ability {
+  color: #23c4ed;
+  font-weight: 500;
+}
+
+.container .mern {
+  color: #e03b8b;
+  /* font-weight: 400; */
+}
 
 /* responsive  */
 
