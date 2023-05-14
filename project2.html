@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1,initial-scale=1.0"
+    />
+    <title>Portfolio || Project</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/project.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- fav icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io//favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <header class="header" id="top">
+      <div class="img">
+        <a href="index.html">
+          <h1>&nbsp;KOUSHIK&nbsp; SAHA&nbsp;</h1>
+        </a>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a class="navbar-link" href="index.html">Home</a></li>
+          <li><a class="navbar-link" href="about.html">About</a></li>
+          <li><a class="navbar-link" href="contact.html">Contact</a></li>
+          <li><a class="navbar-link active" href="#">All Projects</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-navbar-btn">
+        <ion-icon class="mobile-nav-icon" name="menu-outline"></ion-icon>
+        <ion-icon class="mobile-nav-icon" name="close-outline"></ion-icon>
+      </div>
+    </header>
+    <!-- going top button -->
+    <a href="#top">
+      <span class="top">Top &#8593;</span>
+    </a>
+    <div class="project-container" id="project-container">
+     
+    <div class="topbutton">
+      <a href="#top">
+        <button class="btn top-btn">Go to Top &#8593;</button>
+      </a>
+    </div>
+    <!-- nav script -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- data aos -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 50,
+
+        duration: 1000,
+      });
+    </script>
+
+    <script src="/JS/index.js"></script>
+
+    <script>
+        let projectsDiv = document.getElementById("project-container");
+const projects = require("../JS/projects");
+
+projects.forEach((ele) => {
+  projectsDiv.innerHTML += `
+  <div class="project" data-aos=${ele.dataAos}>
+  <img src=${ele.imageSrc} alt="projectimg" />
+  <div class="links">
+    <a
+      href=${ele.gitHubLink}
+      target="_blank"
+      ><button class="btn project-btn">Source Code</button></a
+    >
+
+    <a href=${ele.liveLink} target="_blank"
+      ><button class="btn project-btn">Deploy Link</button></a
+    >
+  </div>
+</div>
+  
+  `;
+});
+    </script>
+  </body>
+</html>

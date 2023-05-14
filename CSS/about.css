@@ -31,6 +31,11 @@
   /* font-weight: 400; */
 }
 
+.container .exp {
+  color: rgb(36 199 212);
+  font-weight: 500;
+}
+
 /* responsive  */
 
 @media screen and (max-width: 930px) {
