@@ -10,14 +10,15 @@
 }
 
 body {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   background-color: #0d0d0d;
   overflow-x: hidden;
-  background-image: url("/images/LinkedIn-Cover.png");
+  /* background-image: url("/images/LinkedIn-Cover.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   /* background-size: contain; */
+  overflow-y: auto;
 }
 
 .header {

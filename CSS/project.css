@@ -21,6 +21,8 @@ html {
 
 .project-container {
   padding: 0 100px;
+  /* height: 100vh;
+  overflow-y: auto; */
 }
 
 .project-heading h1 {
@@ -36,6 +38,8 @@ html {
   column-gap: 40px;
   row-gap: 50px;
   padding: 40px 0;
+  /* height: 100vh; */
+  overflow-y: auto;
 }
 .project img {
   box-sizing: content-box;
